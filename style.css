@@ -1,0 +1,588 @@
+/* *common css */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --primary-color: #FFCC00;
+    --secondary-color:#353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+ width: 1106px;
+ margin: auto;
+}
+.row{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--font-family);
+}
+.align-center{
+ align-items: center;
+}
+
+
+.btn{
+    border-radius: 20px;
+    padding: 22px 45px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    border: 2px solid transparent;
+
+}
+.btn-two{
+ background-color: transparent;
+ border: 1px solid  var(--secondary-color);
+ color: var(--secondary-color);
+}
+
+#workexperience .row p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 200%;
+color: #7A7A7A
+}
+#workexperience .row  h4{font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #353535;
+
+}
+/* *common css end */
+
+/*nav start */
+nav .logo{
+   width: 30%;
+    
+
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: var(--secondary-color);
+    padding: 18px 22px 5px;
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.45s;
+}
+nav .menu ul li:hover a::after{
+ width: 100%;
+}
+/*nav end */
+
+/* hero section start */
+#hero{
+    margin-top: 56px;
+    margin-bottom: 10px;
+}
+#hero .herotext,
+#hero .heroimage{
+    width: 50%;
+}
+
+#hero .herotext h4{
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--secondary-color)
+ 
+}
+#hero .herotext h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--secondary-color);
+    margin: 15px 0 25px;
+}
+ #hero .herotext p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--secondary-color);
+    margin-bottom: 95px;
+ }
+
+ #hero .herotext .btn-two{
+    border-radius: 20px;
+    padding: 22px 45px;
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    border: 1px solid #000000;
+    margin-left: 40px;
+ }
+ 
+ #hero .herotext .contains{
+   padding-top: 66px;
+ }
+ #hero .herotext .contains h5{
+    padding-right: 32px;  
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 22px;
+line-height: 180%;
+color: #353535;
+ }
+ #hero .herotext .contains .icon{
+      padding: 8px 0 0 8px;
+      background-color: #F4F3F3;
+      
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 8px;
+
+      
+      
+ }
+ 
+
+ #hero .herotext .contains .icon img{
+    
+    
+    padding-top: 0;
+    padding-left: 0;
+ 
+  }
+
+
+ #mouse img{
+    
+    padding-left: 485px;
+    
+ }
+/* hero section end */
+
+
+/*aboutme start*/
+#aboutme{
+    background-image: url(../ashikur12/image/aboutme\ bacground.png);
+    background-size: cover;
+    color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+   
+}
+
+#aboutme img{
+  
+  
+  
+  
+}
+
+#aboutme .des{
+ padding-bottom: 86px;  
+padding-top: 78px;
+}
+
+    
+    #aboutme .des h2{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 50px;
+        color: #353535;
+        padding-bottom: 26px;
+        
+    }
+    
+    #aboutme .des p{
+        font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    padding-bottom: 44px;
+    }
+    
+    #aboutme .des a{
+        border: 1px solid #000;
+    border-radius: 20px;
+    width: 171px;
+    height: 66px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    
+    padding-left: 44px;
+    padding-right: 44px;
+    color: #353535;
+    
+    
+    }
+    
+/*aboutme end*/
+
+
+
+
+/*card start*/
+#cards{
+    padding-top: 65px;
+    padding-bottom: 165px;
+}
+#cards .card{
+    width: calc(33.33%-32px);
+    
+    margin: 0 8px;
+    height: 377px;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+background: #fff;
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+#cards .card:hover{
+    box-shadow: 0px 10px 20px 10px #eeeded;
+    margin: auto;
+    
+    margin-left: 1px;
+    
+    transition:  0.345s;
+    cursor: pointer;
+}
+
+
+
+#cards .card p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+text-align: center;
+color: #7A7A7A;
+margin-bottom: 57px;
+
+
+}
+
+
+#cards .card  h4{  
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 22px;
+line-height: 180%;
+text-align: center;
+color: #353535;
+
+}
+
+#cards .row .card img{
+    padding-left: 136px;
+    padding-right: 136px;
+    padding-bottom: 28px;
+    padding-top: 20px;
+  
+}
+
+
+/*brand star*/
+#branding{
+    background-image: url(../ashikur12/image/branding.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+#branding img{
+   
+   
+  padding-left: 17px;
+  padding-right: 102px;
+   padding-top: 26px;
+}
+
+
+#branding .text{
+    
+    margin-top: 78px;
+    margin-bottom: 86px;
+    
+
+    
+}
+
+#branding .text h2{
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 44px;
+color: #353535;
+}
+#branding .text p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 190%;
+color: #353535;
+margin-top: 21px;
+margin-bottom: 35px;
+}
+#branding .text a p{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 17px;
+line-height: 180%;
+text-align: center;
+color: #353535;
+border: 1px solid #000;
+border-radius: 20px;
+width: 171px;
+height: 66px;
+padding-left: 19px;
+padding-right: 19px;
+padding-top: 18px;
+padding-bottom: 17px;
+}
+
+
+/*brand end*/
+
+/*what do start*/
+#whatdo{
+    margin-top: 148px;
+}
+#whatdo .first{
+    width: 380px;
+}
+#whatdo .box{
+    
+    border-radius: 20px;
+width: 100%;
+height: 96px;
+border: 1px solid #eeeded;
+margin-bottom: 22px;
+
+
+
+}
+
+#whatdo .box:hover{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    margin-bottom: 1px;
+    transition: all 0.345%;
+    cursor: pointer;
+}
+
+#whatdo .box img {
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+}
+
+#whatdo .box .text h4{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 180%;
+color: #353535;
+margin-top: 20px;
+margin-left: 15px;
+
+}
+#whatdo .box p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 180%;
+    color: #353535;
+    margin-bottom: 19px;
+    padding-left: 18px;
+}
+
+#whatdo .second{
+    width: 620px;
+    text-align: right;
+}
+#whatdo .second h2{
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 50px;
+text-align: right;
+color: #353535;
+}
+#whatdo .second .desc{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+text-align: right;
+color: #353535;
+margin-top: 30px;
+}
+#whatdo .second .tt1{
+    text-align: right;
+    margin-top: 44px;
+}
+#whatdo .second .tt1{
+    margin-left: 330px;
+    padding-right: 57px;
+}
+#whatdo .second .tt2{
+    text-align: right;
+    margin-top: 44px;
+}
+
+
+#whatdo .second .tt h4{
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 40px;
+text-align: left;
+
+color: #353535;
+
+}
+
+#whatdo .second .tt p{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 180%;
+color: #353535;
+
+
+}
+
+
+
+/*what do end*/
+
+
+
+
+
+
+/* my work experience start*/
+
+#workexperience h2{
+    text-align: center;
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 50px;
+
+color: var(--secondary-color);
+padding-bottom: 100px;
+padding-top: 225px;
+}
+
+
+#workexperience .row{
+justify-content: space-between;
+}
+
+
+#workexperience .help{
+    width: 30%;
+    border-right: 1px dashed #7A7A7A;
+    position: relative;
+
+}
+
+#workexperience .help::before{
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border: 1px dashed #7A7A7A;
+    border-radius:50% ;
+    top: -43px;
+    right: -23px;
+    background-color: white;
+}
+
+#workexperience .help::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #52AB70;
+    border-radius:50% ;
+    top: -31px;
+    right: -11px;
+}
+
+#workexperience .help h4{
+    padding-bottom: 20px;
+
+}
+#workexperience .help p{
+    padding-bottom: 120px;
+}
+
+
+
+
+
+#workexperience .desiner{
+    width: 60%;
+    padding-bottom: 54px;
+}
+
+#workexperience .desiner h4{
+    padding-bottom: 27px;
+}
+
+#workexperience .row:nth-child(2) .help::after{
+    background-color: #F17676;
+}
+
+#workexperience .row:nth-child(3) .help::after{
+    background-color: #FFD233 ;
+}
+
+
+
+
+
+/* my work experience end*/
+
